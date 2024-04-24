@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import Header from './view/UI/Header';
+import Grid from './view/components/Grid';
+
+import { evolveGrid } from './store/slices/gridSlice';
 
 function App() {
+  const dispatch = useDispatch();
+  const { grid } = useSelector(state => state.grid);
+  const handleClick = () => {
+    dispatch(evolveGrid(grid));
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Game of Life" />
+      <main className="app-main">
+        <Grid rows="3" columns="3" />
+        <button onClick={handleClick}>Evolve</button>
+      </main>
     </div>
   );
 }

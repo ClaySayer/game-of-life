@@ -1,0 +1,19 @@
+.grid {
+  display: flex;
+  height: 700px;
+  width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cell {
+  flex: 1;
+  flex-direction: row;
+  border: 1px solid #666;
+}

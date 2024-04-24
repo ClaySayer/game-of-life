@@ -1,0 +1,11 @@
+.menu {
+  text-align: left;
+  padding: 5px 10px;
+  background: linear-gradient(#fff, #ccc);
+  width: 300px;
+  position: fixed;
+}
+
+.menu li {
+  list-style: none;
+}
