@@ -2,7 +2,7 @@
 
 ## Overview
 
-Game of Life is a JavaScript and React port of a Java version written as part of a major assignment for KXT201 Software Construction during my Graduate Diploma.
+Game of Life is a React and Redux Toolkit port of a Java version written as part of a major assignment for KXT201 Software Construction during my Graduate Diploma.
 
 Conway's Game of Life is a cellular automaton devised by British mathematician John Horton Conway in 1970. It is a zero-player game, mesning that its evolution is determined by its initial state, requiring no further input. One interacts with the game by creating an initial configuration and observing how it evolves over time.
 
