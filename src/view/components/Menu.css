@@ -1,11 +1,18 @@
 .menu {
   text-align: left;
-  padding: 5px 10px;
   background: linear-gradient(#fff, #ccc);
   width: 300px;
   position: fixed;
+  min-height: 3.5em;
+  line-height: 3.5em;
+  user-select: none;
 }
 
 .menu li {
   list-style: none;
+  padding: 0.3em 0.5em;
+}
+
+.menu li:hover {
+  background-color: darkgray;
 }

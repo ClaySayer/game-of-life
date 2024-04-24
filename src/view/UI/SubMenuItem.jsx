@@ -7,5 +7,9 @@ export default function SubMenuItem({ children }) {
     dispatch(stopEvolving());
     dispatch(loadGrid(children));
   };
-  return <div onClick={handleClick}>{children}</div>;
+  return (
+    <div onClick={handleClick}>
+      <li>{children}</li>
+    </div>
+  );
 }

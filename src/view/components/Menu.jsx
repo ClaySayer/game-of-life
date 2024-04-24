@@ -28,7 +28,7 @@ export default function Menu() {
 
   return (
     <div className="menu" onClick={handleMenuClick}>
-      Menu
+      <li>Menu</li>
       {isOpen && (
         <>
           <li onClick={handleStartClick}>Start</li>
@@ -37,7 +37,7 @@ export default function Menu() {
           <ExpandableMenuItem
             items={['Glider', 'Die Hard', 'Lightweight Spaceship']}
           >
-            Load
+            <li>Load</li>
           </ExpandableMenuItem>
         </>
       )}
