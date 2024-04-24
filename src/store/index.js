@@ -13,10 +13,12 @@ const timerMiddleware = store => next => action => {
   let result = next(action);
   switch (action.type) {
     case startEvolving.type:
-      return (timer = setInterval(
+      const tmr = setInterval(
         () => dispatch(evolveGrid(getState().grid.grid)),
         getState().grid.evolutionRate,
-      ));
+      );
+      timer = tmr;
+      return tmr;
 
     case stopEvolving.type:
       if (timer) {

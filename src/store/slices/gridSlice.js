@@ -8,8 +8,8 @@ import {
 import { emptyGrid } from './presetGrids';
 
 const initialState = {
-  rows: 20,
-  columns: 20,
+  rows: 40,
+  columns: 40,
   isContinuous: false,
   grid: emptyGrid(),
   evolutionRate: 500,

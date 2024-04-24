@@ -1,5 +1,5 @@
-const defaultRows = 20;
-const defaultColumns = 20;
+const defaultRows = 40;
+const defaultColumns = 40;
 
 export const emptyGrid = () => {
   const grid = [];
